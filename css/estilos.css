@@ -7,10 +7,48 @@ body {
 }
 .header{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .header__titulo {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: lightblue;
 }
+.provincias {
+    display: flex;
+    flex-direction: column;
+
+}
+.provincias__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: lightblue;
+}
+.provincias__datos {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+} 
+.provincias__datos--imagen { 
+    grid-area: 1 / 1 / 5 / 2;
+}
+.provincias__datos--parrafo1 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.provincias__datos--parrafo2 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.provincias__datos--parrafo3 { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+.provincias__datos--parrafo4 { 
+    grid-area: 4 / 2 / 5 / 3; 
+} 
