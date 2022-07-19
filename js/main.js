@@ -41,7 +41,7 @@ for (let i = 0; i < 3; i++) {
 
 }
 
-/* Array de las provincias */
+/* Array de las provincias y sus datos CENSO 2010 */
 
 const provincias = [
     { id: 1, provincia: "Buenos Aires", poblacion: 15625084, territorio: 307571 },
