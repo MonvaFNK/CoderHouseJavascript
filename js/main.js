@@ -4,10 +4,10 @@ let apellido;
 
 /* Alerta datos de Usuario*/
 
-/* nombre = prompt("Introduci tu nombre");
+nombre = prompt("Introduci tu nombre");
 apellido = prompt("Introduci tu apellido");
 
-alert("Bienvenido" + " " + nombre + " " + apellido); */
+alert("Bienvenido" + " " + nombre + " " + apellido);
 
 /* Datos sobre provincias */
 
