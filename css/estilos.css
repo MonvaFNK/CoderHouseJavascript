@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --txtcolor: brown;
+}
+
 body {
     background: gray;
 }
@@ -52,3 +56,19 @@ body {
 .provincias__datos--parrafo4 { 
     grid-area: 4 / 2 / 5 / 3; 
 } 
+.cordoba {
+    color: var(--txtcolor);
+}
+
+.boton{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.tabla{
+    display:block;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
