@@ -90,21 +90,22 @@ let tablaListado = document.querySelector("#tablalistado");
 
 
 botonListado.addEventListener("click", () => {
+    
     let table = document.createElement("table");
     let headerRow = document.createElement("tr");
+    
 
-    headers.forEach(headerText => {
+    headers.forEach(tituloTexto => {
         let header = document.createElement("th");
-        let textNode = document.createTextNode(headerText);
+        let textNode = document.createTextNode(tituloTexto);
         header.appendChild(textNode);
         headerRow.appendChild(header);
     })
     tablalistado.appendChild(headerRow);   
     
-    provincias.forEach(emp=> {
+    provincias.forEach(rowsTexto=> {
         let row = document.createElement("tr")
-
-        Object.values(emp).forEach(text =>{
+        Object.values(rowsTexto).forEach(text =>{
             let cell = document.createElement("th")
             let textNode = document.createTextNode(text)
             cell.appendChild(textNode)
@@ -112,9 +113,7 @@ botonListado.addEventListener("click", () => {
         })
         tablalistado.appendChild(row);
     })
-
     tablalistado.appendChild(table);
-
 })
 
 
