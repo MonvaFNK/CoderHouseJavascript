@@ -90,38 +90,44 @@ let headers = ["Provincias", "Poblacion", "Territorio"]
 
 let botonListado = document.querySelector("#verListado");
 let tablaListado = document.querySelector("#tablalistado");
-
+let condicion = false
 botonListado.addEventListener("click", () => {
-    let table = document.createElement("table");
-    table.setAttribute("id","table")
-    let headerRow = document.createElement("tr");
-    headerRow.setAttribute("id","headerRow")
-    headers.forEach(tituloTexto => {
-        let header = document.createElement("th");
-        header.setAttribute("id", "header")
-        let textNode = document.createTextNode(tituloTexto);
-        header.appendChild(textNode);
-        headerRow.appendChild(header);
-    })
-    tablalistado.appendChild(headerRow);   
-    provincias.forEach(rowsTexto=> {
-        let row = document.createElement("tr")
-        row.setAttribute("id","row")
-        Object.values(rowsTexto).forEach(text =>{
-            let cell = document.createElement("th")
-            cell.setAttribute("id", "celda")
-            let textNode = document.createTextNode(text)
-            cell.appendChild(textNode)
-            row.appendChild(cell)
+    if (condicion == true) {
+        return
+    } else {
+        let table = document.createElement("table");
+        table.setAttribute("id","table")
+        let headerRow = document.createElement("tr");
+        headerRow.setAttribute("id","headerRow")
+        headers.forEach(tituloTexto => {
+            let header = document.createElement("th");
+            header.setAttribute("id", "header")
+            let textNode = document.createTextNode(tituloTexto);
+            header.appendChild(textNode);
+            headerRow.appendChild(header);
         })
-        tablalistado.appendChild(row);
-    })
-    tablalistado.appendChild(table);
+        tablalistado.appendChild(headerRow);   
+        provincias.forEach(rowsTexto=> {
+            let row = document.createElement("tr")
+            row.setAttribute("id","row")
+            Object.values(rowsTexto).forEach(text =>{
+                let cell = document.createElement("th")
+                cell.setAttribute("id", "celda")
+                let textNode = document.createTextNode(text)
+                cell.appendChild(textNode)
+                row.appendChild(cell)
+            })
+            tablalistado.appendChild(row);
+        })
+        tablalistado.appendChild(table);
+        condicion = true
+    }
+
     
 })
 
-botonListado.addEventListener("click", ()=>{
+/* botonListado.addEventListener("click", ()=>{
     document.querySelector('#verListado').disabled = true;
-})
+}) */
 
 
