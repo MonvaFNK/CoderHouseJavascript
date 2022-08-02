@@ -2,14 +2,7 @@
 let nombre;
 let apellido;
 
-/* Alerta datos de Usuario*/
-
-/* nombre = prompt("Introduci tu nombre");
-apellido = prompt("Introduci tu apellido");
-
-let titulo = document.getElementById("bienvenido")
-titulo.innerText = `Bienvenido ${nombre} ${apellido}`  */
-/* Datos sobre provincias */
+/* Datos sobre provincias con objetos*/
 
 function provincia(nombre, poblacion, territorio) {
     this.nombre = nombre;
@@ -41,7 +34,7 @@ for (let i = 0; i < 3; i++) {
 
 }
 
-/* Array de las provincias y sus datos CENSO 2010 */
+/* Array de las provincias y sus datos CENSO 2010 con Array*/
 
 const provincias = [
     { provincia: "Buenos Aires", poblacion: 15625084, territorio: 307571 },
@@ -69,10 +62,6 @@ const provincias = [
     { provincia: "Tucuman", poblacion: 1338523, territorio: 22524 }
 ];
 
-/* for (const provincia of provincias) {
-    console.log("id:"+provincia.id+" Nombre "+provincia.provincia+", poblacion "+provincia.poblacion+", territorio "+provincia.territorio)
-    
-} */
 
 /* Sumando desde el array */
 
@@ -93,7 +82,9 @@ let tablaListado = document.querySelector("#tablalistado");
 let condicion = false
 botonListado.addEventListener("click", () => {
     if (condicion == true) {
-        return
+        condicion = false
+        document.getElementById("verListado").innerHTML = "Ver Listado"; 
+        tablalistado.innerHTML = "";
     } else {
         let table = document.createElement("table");
         table.setAttribute("id","table")
@@ -120,14 +111,15 @@ botonListado.addEventListener("click", () => {
             tablalistado.appendChild(row);
         })
         tablalistado.appendChild(table);
+        document.getElementById("verListado").innerHTML = "Cerrar Listado";
         condicion = true
     }
 
     
 })
 
-/* botonListado.addEventListener("click", ()=>{
-    document.querySelector('#verListado').disabled = true;
-}) */
+/* Deshabilitar boton */
+
+
 
 
