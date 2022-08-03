@@ -133,10 +133,12 @@ datos__boton.addEventListener("click", function login() {
         localStorage.setItem("apellido", apellido);
         localStorage.setItem("mail", email);
         document.getElementById("login").classList.add('invisible');
+        console.log(localStorage.getItem("nombre"));
+        console.log(localStorage.getItem("apellido"));
+        console.log(localStorage.getItem("mail"));
     }
 });
 
-console.log();
 
 
 
