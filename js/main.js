@@ -2,6 +2,8 @@
 let nombre;
 let apellido;
 
+/* Tomar datos de usuario */
+
 /* Datos sobre provincias con objetos*/
 
 function provincia(nombre, poblacion, territorio) {
@@ -83,13 +85,13 @@ let condicion = false
 botonListado.addEventListener("click", () => {
     if (condicion == true) {
         condicion = false
-        document.getElementById("verListado").innerHTML = "Ver Listado"; 
+        document.getElementById("verListado").innerHTML = "Ver Listado";
         tablalistado.innerHTML = "";
     } else {
         let table = document.createElement("table");
-        table.setAttribute("id","table")
+        table.setAttribute("id", "table")
         let headerRow = document.createElement("tr");
-        headerRow.setAttribute("id","headerRow")
+        headerRow.setAttribute("id", "headerRow")
         headers.forEach(tituloTexto => {
             let header = document.createElement("th");
             header.setAttribute("id", "header")
@@ -97,11 +99,11 @@ botonListado.addEventListener("click", () => {
             header.appendChild(textNode);
             headerRow.appendChild(header);
         })
-        tablalistado.appendChild(headerRow);   
-        provincias.forEach(rowsTexto=> {
+        tablalistado.appendChild(headerRow);
+        provincias.forEach(rowsTexto => {
             let row = document.createElement("tr")
-            row.setAttribute("id","row")
-            Object.values(rowsTexto).forEach(text =>{
+            row.setAttribute("id", "row")
+            Object.values(rowsTexto).forEach(text => {
                 let cell = document.createElement("th")
                 cell.setAttribute("id", "celda")
                 let textNode = document.createTextNode(text)
@@ -112,14 +114,29 @@ botonListado.addEventListener("click", () => {
         })
         tablalistado.appendChild(table);
         document.getElementById("verListado").innerHTML = "Cerrar Listado";
-        condicion = true
+        condicion = true;
     }
-
-    
 })
 
-/* Deshabilitar boton */
 
+datos__boton.addEventListener("click", function login() {
+    document.getElementById("datos__boton")
+    
+    if (datos__nombre.value.length == 0,datos__apellido.value.length == 0,datos__mail.value.length == 0) {
+        alert("Los datos fueron ingresados incorrectamente")
+    } else {
+        let nombre, apellido, email;
+        nombre = document.getElementById("datos__nombre").value;
+        apellido = document.getElementById("datos__apellido").value;
+        email = document.getElementById("datos__mail").value;
+        localStorage.setItem("nombre", nombre);
+        localStorage.setItem("apellido", apellido);
+        localStorage.setItem("mail", email);
+        document.getElementById("login").classList.add('invisible');
+    }
+});
+
+console.log();
 
 
 

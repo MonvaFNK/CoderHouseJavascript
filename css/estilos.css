@@ -72,3 +72,42 @@ th, td {
     border: 1px solid black;
     padding: 5px;
 }
+.visibleflex{
+    display:flex;
+}
+.invisible{
+    display: none;
+}
+.datos__backgroundcover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(204, 204, 204,0.4);
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:99;
+}
+.datos__contenedor {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    width: 600px;
+    height: 600px;
+    z-index: 100;
+}
+.visibleflex{
+    display:flex;
+}
+.invisible{
+    display: none;
+}
+.datos__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

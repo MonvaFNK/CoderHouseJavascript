@@ -9,6 +9,20 @@
     <title>Geografia en la Argentina</title>
 </head>
 <body>
+    <!-- Form para datos de usuario -->
+    <div class="datos__backgroundcover visibleflex" id="login">
+        <div class="datos__contenedor">
+            <form class="datos__form">
+                <label>Nombre</label>
+                <input name="Nombre" id="datos__nombre" placeholder="Ricardo">
+                <label>Apellido</label>
+                <input name="Apellido" id="datos__apellido" placeholder="Dominguez">
+                <label>Email</label>
+                <input name="Email" id="datos__mail" type="email" placeholder="JohnDoe@gmail.com">
+                <input id="datos__boton" name="Enviar" type="button" value="Submit">
+            </form>
+        </div>
+    </div>
     <!-- Seccion Introductoria -->
     <section class="header">
         <h1 class="header__titulo">Geografia - Argentina</h1>
@@ -23,10 +37,11 @@
         <div class="provincias__datos">
             <img class="provincias__datos--imagen" src="recursos/Mapa_Argentina_provincias.png" alt="Mapa de la Argentina y sus lugares turisticos"> 
             <p class="provincias__datos--parrafo1"> La Argentina cuenta con 23 provincias y un distrito federal, el cual es Buenos Aires, la capital.</p>
-            <p class="provincias__datos--parrafo2"> Lorem, ipsum dolor.</p>
-            <p class="provincias__datos--parrafo3"> Lorem, ipsum dolor.</p>
-            <p class="provincias__datos--parrafo4"> Lorem, ipsum dolor.</p>
+            <p class="provincias__datos--parrafo2"> Lorem, ipsum dolor. </p>
+            <p class="provincias__datos--parrafo3"> Lorem, ipsum dolor. </p>
+            <p class="provincias__datos--parrafo4"> Lorem, ipsum dolor. </p>
         </div>
+        <!-- Listado de provincias e informacion -->
         <div id="contenedor">
             <button type="button" id="verListado" class="boton">Ver Listado</button>
             <div id="tablalistado" class="tabla">
