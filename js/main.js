@@ -140,6 +140,9 @@ datos__boton.addEventListener("click", ()=> {
         console.log(localStorage.getItem("mail"));
     }
 });
+/* Ternario ?*/
+
+    parseInt(buenos_aires.poblacion) > 1500000 ? console.log("Hay mas de 15 millones de habitantes"): console.log("Hay menos de 15 millones de habitantes");
 
 /* Libreria Graphs de google */
 
