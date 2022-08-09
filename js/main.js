@@ -121,10 +121,10 @@ botonListado.addEventListener("click", () => {
 
 /* Datos Login */
 
-datos__boton.addEventListener("click", ()=> {
+datos__boton.addEventListener("click", () => {
     document.getElementById("datos__boton")
-    
-    if (datos__nombre.value.length == 0,datos__apellido.value.length == 0,datos__mail.value.length == 0) {
+
+    if (datos__nombre.value.length == 0, datos__apellido.value.length == 0, datos__mail.value.length == 0) {
         alert("Los datos fueron ingresados incorrectamente")
     } else {
         let nombre, apellido, email;
@@ -142,31 +142,39 @@ datos__boton.addEventListener("click", ()=> {
 });
 /* Ternario ?*/
 
-    parseInt(buenos_aires.poblacion) > 1500000 ? console.log("Hay mas de 15 millones de habitantes"): console.log("Hay menos de 15 millones de habitantes");
+parseInt(buenos_aires.poblacion) > 1500000 ? console.log("Hay mas de 15 millones de habitantes") : console.log("Hay menos de 15 millones de habitantes");
 
 /* Libreria Graphs de google */
 
 /* let grafico = provincias.map(({provincia, poblacion,})=>{ 
     return [provincia,poblacion];
 }); */
+/* for (let index = 0; index < provincias.length; index++) {
+    const element = provincias[index];
+    let personaBuscada = element.map((p) => `${p.poblacion},${p.provincia}`);
+grafico = [...grafico, personaBuscada];
+} */
+let grafico = []
+grafico = [...grafico, provincias.map(p => [p.provincia,p.poblacion])];
+console.log(grafico)
 
-let grafico = provincias.forEach(element =>
-    element = ["provincia","poblacion"]
-    )
+/* `${p.poblacion},${p.provincia}` */
 
 google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 
 
-    var data = google.visualization.arrayToDataTable([
-        /* Aqui irian los arrays */
-    ]);
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Provincias');
+    data.addColumn('number', 'Poblacion');
+    data.addRows(grafico[0]);
+
     var options = {
         title: 'Poblacion de las provincias argentinas',
         backgroundColor: 'gray',
     };
-    var chart = new google.visualization.ColumnChart(document.getElementById('provincias'));
+    var chart = new google.visualization.PieChart(document.getElementById('provincias'));
     chart.draw(data, options);
 }
 
