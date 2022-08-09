@@ -1,13 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: roboto-medium;
 }
 :root {
     --txtcolor: brown;
 }
 
 body {
-    background: gray;
+    background: beige;
+
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url(/recursos/tipografia/Roboto-Light.ttf);
 }
 .header{
     display: flex;
@@ -20,7 +26,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: lightblue;
 }
 .provincias {
     display: flex;
@@ -32,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: lightblue;
+    margin-bottom: 10px;
 }
 .provincias__datos {
     display: grid;
@@ -43,7 +48,97 @@ body {
 } 
 .provincias__datos--imagen { 
     grid-area: 1 / 1 / 5 / 2;
+    display: flex;
+    height: 1000px;
+    position: relative;
+    background-image: url(/recursos/provincias/Argentina.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+.provincias_imagen{
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: solid green 2px;
+}
+.buenos_aires {
+top: 400px;
+left: 330px;
+}
+.catamarca {
+
+}
+.chaco {
+
+}
+.chubut {
+
+}
+.cordoba {
+
+}
+.corrientes {
+
+}
+.entre_rios{
+top: 300px;
+left: 320px
+}
+.formosa {
+
+}
+.jujuy{
+
+}
+.la_pampa {
+
+}
+.la_rioja {
+
+}
+.mendoza {
+
+}
+.misiones {
+top:163px;
+left: 450px;
+}
+.neuquen {
+
+}
+.rio_negro {
+
+}
+.salta {
+
+}
+.san_juan {
+
+}
+.santa_fe {
+
+}
+.san_luis {
+
+}
+.santa_cruz {
+
+}
+.santiago_del_estero{
+
+}
+.tierra_del_fuego{
+
+}
+.tucuman {
+
+}
+
+
 .provincias__datos--parrafo1 { 
     grid-area: 1 / 2 / 2 / 3; 
 }
@@ -116,3 +211,4 @@ th, td {
     height: 400px !important;
     background-color: gray !important;
 }
+/* Provincias WIP */

@@ -10,49 +10,82 @@
     <title>Geografia en la Argentina</title>
 </head>
 <body>
-    <!-- Form para datos de usuario -->
-    <div class="datos__backgroundcover visibleflex" id="login">
-        <div class="datos__contenedor">
-            <form class="datos__form">
-                <label>Nombre</label>
-                <input name="Nombre" id="datos__nombre" placeholder="Ricardo">
-                <label>Apellido</label>
-                <input name="Apellido" id="datos__apellido" placeholder="Dominguez">
-                <label>Email</label>
-                <input name="Email" id="datos__mail" type="email" placeholder="JohnDoe@gmail.com">
-                <input id="datos__boton" name="Enviar" type="button" value="Submit">
-            </form>
-        </div>
-    </div>
-    <!-- Seccion Introductoria -->
-    <section class="header">
-        <h1 class="header__titulo">Geografia - Argentina</h1>
-        <!-- En este proyecto me gustaria intentar hacer una pagina interactiva, donde se muestren varios datos
-        acerca de la geografia demografica Argentina -->
-        <p id="bienvenido">Bienvenido</p>
-        <p>Aqui podran ver datos acerca de las provincias de la Argentina!</p>
-    </section>
-    <!-- Seccion de provincias -->
-    <section class="provincias">
-        <h2 class="provincias__titulo"> Provincias Argentinas</h2>
-        <div class="provincias__datos">
-            <img class="provincias__datos--imagen" src="recursos/Mapa_Argentina_provincias.png" alt="Mapa de la Argentina y sus lugares turisticos"> 
-            <p class="provincias__datos--parrafo1" id="cordoba"> La Argentina cuenta con 23 provincias y un distrito federal, el cual es Buenos Aires, la capital.</p>
-            <p class="provincias__datos--parrafo2"> Lorem, ipsum dolor. </p>
-            <p class="provincias__datos--parrafo3"> Lorem, ipsum dolor. </p>
-            <p class="provincias__datos--parrafo4"> Lorem, ipsum dolor. </p>
-        </div>
-        <!-- Listado de provincias e informacion -->
-        <div id="contenedor">
-            <button type="button" id="verListado" class="boton">Ver Listado</button>
-            <div id="tablalistado" class="tabla">
+    <header>
+        <!-- Form para datos de usuario -->
+        <section>
+            <div class="datos__backgroundcover visibleflex" id="login">
+                <div class="datos__contenedor">
+                    <form class="datos__form">
+                        <label>Nombre</label>
+                        <input name="Nombre" id="datos__nombre" placeholder="Ricardo">
+                        <label>Apellido</label>
+                        <input name="Apellido" id="datos__apellido" placeholder="Dominguez">
+                        <label>Email</label>
+                        <input name="Email" id="datos__mail" type="email" placeholder="JohnDoe@gmail.com">
+                        <input id="datos__boton" name="Enviar" type="button" value="Submit">
+                    </form>
+                </div>
             </div>
-        </div>
-        <div id="provincias" class="grafico"></div>
+        </section>
+        <!-- Seccion Introductoria -->
+        <section class="header">
+            <h1 class="header__titulo">Geografia - Argentina</h1>
+            <!-- En este proyecto me gustaria intentar hacer una pagina interactiva, donde se muestren varios datos
+            acerca de la geografia demografica Argentina -->
+            <p id="bienvenido">Bienvenido</p>
+            <p>Aqui podran ver datos acerca de las provincias de la Argentina!</p>
+        </section>
+    </header>   
+    <!-- Seccion de provincias -->
+    <main>
+        <section class="provincias">
+            <h2 class="provincias__titulo"> Provincias Argentinas</h2>
+            <div class="provincias__datos">
+                <div class="provincias__datos--imagen">
+                    <div class="buenos_aires provincias_imagen"></div>
+                    <div class="catamarca provincias_imagen"></div>
+                    <div class="chaco provincias_imagen"></div>
+                    <div class="chubut provincias_imagen"></div>
+                    <div class="cordoba provincias_imagen"></div>
+                    <div class="corrientes provincias_imagen"></div>
+                    <div class="entre_rios provincias_imagen"></div>
+                    <div class="formosa provincias_imagen"></div>
+                    <div class="jujuy provincias_imagen"></div>
+                    <div class="la_pampa provincias_imagen"></div>
+                    <div class="la_rioja provincias_imagen"></div>
+                    <div class="mendoza provincias_imagen"></div>
+                    <div class="misiones provincias_imagen"></div>
+                    <div class="neuquen provincias_imagen"></div>
+                    <div class="rio_negro provincias_imagen"></div>
+                    <div class="salta provincias_imagen"></div>
+                    <div class="san_juan provincias_imagen"></div>
+                    <div class="san_luis provincias_imagen"></div>
+                    <div class="santa_cruz provincias_imagen"></div>
+                    <div class="santa_fe provincias_imagen"></div>
+                    <div class="santiago_del_estero provincias_imagen"></div>
+                    <div class="tierra_del_fuego provincias_imagen"></div>
+                    <div class="islas_malvinas provincias_imagen"></div>
+                    <div class="tucuman provincias_imagen"></div>
+                </div>
+                <p class="provincias__datos--parrafo1" id="cordoba"> La Argentina cuenta con 23 provincias y un distrito federal, el cual es Buenos Aires, la capital.</p>
+                <p class="provincias__datos--parrafo2"> Lorem, ipsum dolor. </p>
+                <p class="provincias__datos--parrafo3"> Lorem, ipsum dolor. </p>
+                <p class="provincias__datos--parrafo4"> Lorem, ipsum dolor. </p>
+            </div>
+            <!-- Listado de provincias e informacion -->
+            <div id="contenedor">
+                <button type="button" id="verListado" class="boton">Ver Listado</button>
+                <div id="tablalistado" class="tabla">
+                </div>
+            </div>
+            <div id="provincias" class="grafico"></div>
 
-        </div>
-    </section>
-
+            </div>
+        </section>
+    </main>
+<footer>
+    <p>gracias por visitar la pagina</p>
+</footer>
     <!-- script y librerias -->
     <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
