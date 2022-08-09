@@ -111,3 +111,8 @@ th, td {
     align-items: center;
     flex-direction: column;
 }
+.grafico {
+    width: 100% !important;
+    height: 400px !important;
+    background-color: gray !important;
+}

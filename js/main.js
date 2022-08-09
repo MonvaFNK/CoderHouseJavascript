@@ -1,3 +1,4 @@
+
 /* Variables */
 let nombre;
 let apellido;
@@ -118,8 +119,9 @@ botonListado.addEventListener("click", () => {
     }
 })
 
+/* Datos Login */
 
-datos__boton.addEventListener("click", function login() {
+datos__boton.addEventListener("click", ()=> {
     document.getElementById("datos__boton")
     
     if (datos__nombre.value.length == 0,datos__apellido.value.length == 0,datos__mail.value.length == 0) {
@@ -139,6 +141,30 @@ datos__boton.addEventListener("click", function login() {
     }
 });
 
+/* Libreria Graphs de google */
 
+/* let grafico = provincias.map(({provincia, poblacion,})=>{ 
+    return [provincia,poblacion];
+}); */
+
+let grafico = provincias.forEach(element =>
+    element = ["provincia","poblacion"]
+    )
+
+google.charts.load('current', { packages: ['corechart'] });
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+
+
+    var data = google.visualization.arrayToDataTable([
+        /* Aqui irian los arrays */
+    ]);
+    var options = {
+        title: 'Poblacion de las provincias argentinas',
+        backgroundColor: 'gray',
+    };
+    var chart = new google.visualization.ColumnChart(document.getElementById('provincias'));
+    chart.draw(data, options);
+}
 
 
