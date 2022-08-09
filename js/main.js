@@ -124,7 +124,7 @@ botonListado.addEventListener("click", () => {
 datos__boton.addEventListener("click", () => {
     document.getElementById("datos__boton")
 
-    if (datos__nombre.value.length == 0, datos__apellido.value.length == 0, datos__mail.value.length == 0) {
+    if (datos__nombre.value.length == 0 || datos__apellido.value.length == 0 || datos__mail.value.length == 0) {
         alert("Los datos fueron ingresados incorrectamente")
     } else {
         let nombre, apellido, email;
@@ -171,7 +171,7 @@ function drawChart() {
     data.addRows(grafico[0]);
 
     var options = {
-        title: 'Poblacion de las provincias argentinas',
+        title: `Poblacion de las provincias argentinas, el total es ${poblaciontotal} habitantes`,
         backgroundColor: 'gray',
     };
     var chart = new google.visualization.PieChart(document.getElementById('provincias'));
