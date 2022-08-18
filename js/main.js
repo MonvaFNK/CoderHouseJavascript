@@ -177,5 +177,21 @@ function drawChart() {
     var chart = new google.visualization.PieChart(document.getElementById('provincias'));
     chart.draw(data, options);
 }
+/* Fetch para clima de provincias */
+
+let ciudadSeleccionada = "MDZ";
+const url = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=${ciudadSeleccionada}&country=AR`;
 
 
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(url);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let clima = document.getElementById("clima")
+    let clima2 = document.getElementById("clima2") 
+
+    clima.innerText = weather.description,
+    clima2.innerText = `${temp}°`
+});
