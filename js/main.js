@@ -179,10 +179,10 @@ function drawChart() {
 }
 /* Fetch para clima de provincias */
 
-const MDZ = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$MDZ&country=AR&lang=ES`;
+const MEND = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$MDZ&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
-    const respuesta = await fetch(MDZ);
+    const respuesta = await fetch(MEND);
     const jsonRta = await respuesta.json()
     const {weather, temp} = jsonRta.data[0]
     
@@ -248,7 +248,7 @@ addEventListener('load', async()=>{
     RIOJTEMP.innerText = `${temp}°C`
 });
 
-const CATA = ``;
+const CATA = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$cata&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(CATA);
@@ -262,7 +262,7 @@ addEventListener('load', async()=>{
     CATATEMP.innerText = `${temp}°C`
 });
 
-const CORD = ``;
+const CORD = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$cordoba&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(CORD);
@@ -276,7 +276,7 @@ addEventListener('load', async()=>{
     CORDTEMP.innerText = `${temp}°C`
 });
 
-const CORR = ``;
+const CORR = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$corrientes&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(CORR);
@@ -290,7 +290,7 @@ addEventListener('load', async()=>{
     CORRTEMP.innerText = `${temp}°C`
 });
 
-const CHAC = ``;
+const CHAC = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$resistencia&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(CHAC);
@@ -304,7 +304,7 @@ addEventListener('load', async()=>{
     CHACTEMP.innerText = `${temp}°C`
 });
 
-const CHUB = ``;
+const CHUB = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$rawson&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(CHUB);
@@ -318,7 +318,7 @@ addEventListener('load', async()=>{
     CHUBTEMP.innerText = `${temp}°C`
 });
 
-const ENTR = ``;
+const ENTR = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$Parana&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(ENTR);
@@ -332,7 +332,7 @@ addEventListener('load', async()=>{
     ENTRTEMP.innerText = `${temp}°C`
 });
 
-const FORM = ``;
+const FORM = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$Formosa&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(FORM);
@@ -346,7 +346,7 @@ addEventListener('load', async()=>{
     FORMTEMP.innerText = `${temp}°C`
 });
 
-const JUJU = ``;
+const JUJU = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$jujuy&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(JUJU);
@@ -360,7 +360,7 @@ addEventListener('load', async()=>{
     JUJUTEMP.innerText = `${temp}°C`
 });
 
-const PAMP = ``;
+const PAMP = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$SantaRosa&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(PAMP);
@@ -374,7 +374,7 @@ addEventListener('load', async()=>{
     PAMPTEMP.innerText = `${temp}°C`
 });
 
-const MISI = ``;
+const MISI = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$posadas&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(MISI);
@@ -388,7 +388,7 @@ addEventListener('load', async()=>{
     MISITEMP.innerText = `${temp}°C`
 });
 
-const NEUQ =  ``;
+const NEUQ =  `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$Neuquen&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(NEUQ);
@@ -402,7 +402,7 @@ addEventListener('load', async()=>{
     NEUQTEMP.innerText = `${temp}°C`
 });
 
-const NEGR =  ``;
+const NEGR =  `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$Viedma&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(NEGR);
@@ -416,7 +416,7 @@ addEventListener('load', async()=>{
     NEGRTEMP.innerText = `${temp}°C`
 });
 
-const SALT =  ``;
+const SALT =  `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$Salta&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(SALT);
@@ -430,7 +430,7 @@ addEventListener('load', async()=>{
     SALTTEMP.innerText = `${temp}°C`
 });
 
-const LUIS = ``;
+const LUIS = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$sanl&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(LUIS);
@@ -444,7 +444,7 @@ addEventListener('load', async()=>{
     LUISTEMP.innerText = `${temp}°C`
 });
 
-const FE = ``;
+const FE = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$SantaFe&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(FE);
@@ -458,7 +458,7 @@ addEventListener('load', async()=>{
     FETEMP.innerText = `${temp}°C`
 });
 
-const ESTE = ``;
+const ESTE = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$santiagodelestero&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(ESTE);
@@ -472,7 +472,7 @@ addEventListener('load', async()=>{
     ESTETEMP.innerText = `${temp}°C`
 });
 
-const FUEG = ``;
+const FUEG = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$santaushuaia&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
     const respuesta = await fetch(FUEG);
@@ -484,4 +484,18 @@ addEventListener('load', async()=>{
 
     FUEGCLIMA.innerText = weather.description,
     FUEGTEMP.innerText = `${temp}°C`
+});
+
+const CRUZ = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$rio%20gallegos&country=AR&lang=ES`;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(CRUZ);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let CRUZCLIMA = document.getElementById("CRUZCLIMA")
+    let CRUZTEMP = document.getElementById("CRUZTEMP") 
+
+    CRUZCLIMA.innerText = weather.description,
+    CRUZTEMP.innerText = `${temp}°C`
 });
