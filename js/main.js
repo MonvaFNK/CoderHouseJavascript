@@ -172,26 +172,316 @@ function drawChart() {
 
     var options = {
         title: `Poblacion de las provincias argentinas, el total es ${poblaciontotal} habitantes`,
-        backgroundColor: 'gray',
+        backgroundColor: 'beige',
     };
     var chart = new google.visualization.PieChart(document.getElementById('provincias'));
     chart.draw(data, options);
 }
 /* Fetch para clima de provincias */
 
-let ciudadSeleccionada = "MDZ";
-const url = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=${ciudadSeleccionada}&country=AR`;
-
-
+const MDZ = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$MDZ&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{
-    const respuesta = await fetch(url);
+    const respuesta = await fetch(MDZ);
     const jsonRta = await respuesta.json()
     const {weather, temp} = jsonRta.data[0]
     
-    let clima = document.getElementById("clima")
-    let clima2 = document.getElementById("clima2") 
+    let MENDCLIMA = document.getElementById("MENDCLIMA")
+    let MENDTEMP = document.getElementById("MENDTEMP") 
 
-    clima.innerText = weather.description,
-    clima2.innerText = `${temp}°`
+    MENDCLIMA.innerText = weather.description,
+    MENDTEMP.innerText = `${temp}°C`
+});
+
+const BSAS = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$buenos&country=AR&lang=ES`;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(BSAS);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let BSASCLIMA = document.getElementById("BSASCLIMA")
+    let BSASTEMP = document.getElementById("BSASTEMP") 
+
+    BSASCLIMA.innerText = weather.description,
+    BSASTEMP.innerText = `${temp}°C`
+});
+
+const TUCU = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$tucu&country=AR&lang=ES`;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(TUCU);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let TUCUCLIMA = document.getElementById("TUCUCLIMA")
+    let TUCUTEMP = document.getElementById("TUCUTEMP") 
+
+    TUCUCLIMA.innerText = weather.description,
+    TUCUTEMP.innerText = `${temp}°C`
+});
+const JUAN = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$san&country=AR&lang=ES`;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(JUAN);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let JUANCLIMA = document.getElementById("JUANCLIMA")
+    let JUANTEMP = document.getElementById("JUANTEMP") 
+
+    JUANCLIMA.innerText = weather.description,
+    JUANTEMP.innerText = `${temp}°C`
+});
+
+const RIOJ = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$rion&country=AR&lang=ES`;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(RIOJ);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let RIOJCLIMA = document.getElementById("RIOJCLIMA")
+    let RIOJTEMP = document.getElementById("RIOJTEMP") 
+
+    RIOJCLIMA.innerText = weather.description,
+    RIOJTEMP.innerText = `${temp}°C`
+});
+
+const CATA = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(CATA);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let CATACLIMA = document.getElementById("CATACLIMA")
+    let CATATEMP = document.getElementById("CATATEMP") 
+
+    CATACLIMA.innerText = weather.description,
+    CATATEMP.innerText = `${temp}°C`
+});
+
+const CORD = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(CORD);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let CORDCLIMA = document.getElementById("CORDCLIMA")
+    let CORDTEMP = document.getElementById("CORDTEMP") 
+
+    CORDCLIMA.innerText = weather.description,
+    CORDTEMP.innerText = `${temp}°C`
+});
+
+const CORR = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(CORR);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let CORRCLIMA = document.getElementById("CORRCLIMA")
+    let CORRTEMP = document.getElementById("CORRTEMP") 
+
+    CORRCLIMA.innerText = weather.description,
+    CORRTEMP.innerText = `${temp}°C`
+});
+
+const CHAC = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(CHAC);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let CHACCLIMA = document.getElementById("CHACCLIMA")
+    let CHACTEMP = document.getElementById("CHACTEMP") 
+
+    CHACCLIMA.innerText = weather.description,
+    CHACTEMP.innerText = `${temp}°C`
+});
+
+const CHUB = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(CHUB);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let CHUBCLIMA = document.getElementById("CHUBCLIMA")
+    let CHUBTEMP = document.getElementById("CHUBTEMP") 
+
+    CHUBCLIMA.innerText = weather.description,
+    CHUBTEMP.innerText = `${temp}°C`
+});
+
+const ENTR = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(ENTR);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let ENTRCLIMA = document.getElementById("ENTRCLIMA")
+    let ENTRTEMP = document.getElementById("ENTRTEMP") 
+
+    ENTRCLIMA.innerText = weather.description,
+    ENTRTEMP.innerText = `${temp}°C`
+});
+
+const FORM = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(FORM);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let FORMCLIMA = document.getElementById("FORMCLIMA")
+    let FORMTEMP = document.getElementById("FORMTEMP") 
+
+    FORMCLIMA.innerText = weather.description,
+    FORMTEMP.innerText = `${temp}°C`
+});
+
+const JUJU = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(JUJU);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let JUJUCLIMA = document.getElementById("JUJUCLIMA")
+    let JUJUTEMP = document.getElementById("JUJUTEMP") 
+
+    JUJUCLIMA.innerText = weather.description,
+    JUJUTEMP.innerText = `${temp}°C`
+});
+
+const PAMP = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(PAMP);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let PAMPCLIMA = document.getElementById("PAMPCLIMA")
+    let PAMPTEMP = document.getElementById("PAMPTEMP") 
+
+    PAMPCLIMA.innerText = weather.description,
+    PAMPTEMP.innerText = `${temp}°C`
+});
+
+const MISI = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(MISI);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let MISICLIMA = document.getElementById("MISICLIMA")
+    let MISITEMP = document.getElementById("MISITEMP") 
+
+    MISICLIMA.innerText = weather.description,
+    MISITEMP.innerText = `${temp}°C`
+});
+
+const NEUQ =  ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(NEUQ);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let NEUQCLIMA = document.getElementById("NEUQCLIMA")
+    let NEUQTEMP = document.getElementById("NEUQTEMP") 
+
+    NEUQCLIMA.innerText = weather.description,
+    NEUQTEMP.innerText = `${temp}°C`
+});
+
+const NEGR =  ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(NEGR);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let NEGRCLIMA = document.getElementById("NEGRCLIMA")
+    let NEGRTEMP = document.getElementById("NEGRTEMP") 
+
+    NEGRCLIMA.innerText = weather.description,
+    NEGRTEMP.innerText = `${temp}°C`
+});
+
+const SALT =  ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(SALT);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let SALTCLIMA = document.getElementById("SALTCLIMA")
+    let SALTTEMP = document.getElementById("SALTTEMP") 
+
+    SALTCLIMA.innerText = weather.description,
+    SALTTEMP.innerText = `${temp}°C`
+});
+
+const LUIS = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(LUIS);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let LUISCLIMA = document.getElementById("LUISCLIMA")
+    let LUISTEMP = document.getElementById("LUISTEMP") 
+
+    LUISCLIMA.innerText = weather.description,
+    LUISTEMP.innerText = `${temp}°C`
+});
+
+const FE = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(FE);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let FECLIMA = document.getElementById("FECLIMA")
+    let FETEMP = document.getElementById("FETEMP") 
+
+    FECLIMA.innerText = weather.description,
+    FETEMP.innerText = `${temp}°C`
+});
+
+const ESTE = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(ESTE);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let ESTECLIMA = document.getElementById("ESTECLIMA")
+    let ESTETEMP = document.getElementById("ESTETEMP") 
+
+    ESTECLIMA.innerText = weather.description,
+    ESTETEMP.innerText = `${temp}°C`
+});
+
+const FUEG = ``;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(FUEG);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let FUEGCLIMA = document.getElementById("FUEGCLIMA")
+    let FUEGTEMP = document.getElementById("FUEGTEMP") 
+
+    FUEGCLIMA.innerText = weather.description,
+    FUEGTEMP.innerText = `${temp}°C`
 });

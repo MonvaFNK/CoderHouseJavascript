@@ -3,9 +3,6 @@
     padding: 0;
     font-family: roboto-medium;
 }
-:root {
-    --txtcolor: brown;
-}
 
 body {
     background: beige;
@@ -41,133 +38,381 @@ body {
 }
 .provincias__datos {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+    grid-row-gap: 0px;  
+    margin: 3px;
 } 
 .provincias__datos--imagen { 
     grid-area: 1 / 1 / 5 / 2;
     display: flex;
-    height: 1000px;
     position: relative;
-    background-image: url(/recursos/provincias/Argentina.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    height: 100%;
+    border: 1px black solid;
+
+}
+.provincias__datos--imagenargentina{
+    width: 100%;
+    height: 100%;
 }
 .provincias_imagen{
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    height: 15px;
-    width: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 10px;
+    width: 10px;
     background-color: black;
     border-radius: 50%;
-    border: solid green 2px;
+    border: solid rgb(85, 113, 204) 2px;
+    overflow: hidden;
+}
+.provincias_imagen:hover{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+}
+.absolute{
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
 }
 .buenos_aires {
-top: 400px;
-left: 330px;
+    top: 40%;
+    left: 55%;
+    color: transparent;
+}
+.buenos_aires:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .catamarca {
-top: 150px;
-left: 120px;
+top: 15%;
+left: 25%;
+color: transparent;
+}
+.catamarca:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .chaco {
-top: 150px;
-left: 300px;
+left: 60%;
+top: 16%;
+color: transparent;
+}
+.chaco:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .chubut {
-top: 620px;
-left: 150px;
+top: 63%;
+left: 25%;
+color: transparent;
+}
+.chubut:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .cordoba {
-top: 300px;
-left: 230px;
+top: 28%;
+left: 43%;
+color: transparent;
+}
+.cordoba:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .corrientes {
-top: 220px;
-left: 350px;
+    top: 20%;
+    left: 75%;
+    color: transparent;
+}
+.corrientes:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .entre_rios{
-top: 300px;
-left: 320px
+    top: 30%;
+    left:65%;
+    color: transparent;
+}
+.entre_rios:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .formosa {
-top: 90px;
-left: 300px;
+top: 10%;
+left: 60%;
+color: transparent;
+}
+.formosa:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .jujuy{
-top: 50px;
-left: 150px;
+top: 4%;
+left: 30%;
+color: transparent;
+}
+.jujuy:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .la_pampa {
-
+top: 45%;
+left: 40%;
+color: transparent;
+}
+.la_pampa:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .la_rioja {
-
+top: 23%;
+left: 25%;
+color: transparent;
+}
+.la_rioja:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .mendoza {
-
+top: 35%;
+left: 20%;
+color: transparent;
+}
+.mendoza:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .misiones {
-top:163px;
-left: 450px;
+top: 15%;
+left: 91%;
+color: transparent;
+}
+.misiones:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .neuquen {
-
+top: 50%;
+left: 15%;
+color: transparent;
+}
+.neuquen:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .rio_negro {
-
+top: 53%;
+left: 32%;
+color: transparent;
+}
+.rio_negro:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .salta {
-
+top: 11%;
+left: 35%;
+color: transparent;
+}
+.salta:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .san_juan {
-
+top: 27%;
+left: 20%;
+color: transparent;
+}
+.san_juan:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .santa_fe {
-
+top: 25%;
+left: 55%;
+color: transparent;
+}
+.santa_fe:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .san_luis {
-
+top: 35%;
+left: 32%;
+color: transparent;
+}
+.san_luis:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .santa_cruz {
-
+top: 80%;
+left: 20%;
+color: transparent;
+}
+.santa_cruz:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .santiago_del_estero{
-
+top: 15%;
+left: 45%;
+color: transparent;
+}
+.santiago_del_estero:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .tierra_del_fuego{
-
+top: 93.5%;
+left: 30%;
+color: transparent;
+}
+.tierra_del_fuego:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
 }
 .tucuman {
-
+left: 36%;
+top: 16%;
+color: transparent;
 }
-
+.tucuman:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
+}
+.islas_malvinas{
+    top: 87%;
+    left: 55%;
+    color: transparent;
+}
+.islas_malvinas:hover .provincias_imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    z-index: 1;
+    color: black;
+}
 
 .provincias__datos--parrafo1 { 
     grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
 }
 .provincias__datos--parrafo2 { 
-    grid-area: 2 / 2 / 3 / 3; 
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
 }
 .provincias__datos--parrafo3 { 
     grid-area: 3 / 2 / 4 / 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
 }
 .provincias__datos--parrafo4 { 
     grid-area: 4 / 2 / 5 / 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
 } 
-.cordoba {
-    color: var(--txtcolor);
+.provincias__datos--listado {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    grid-area: 1 / 3 / 5 / 4;
+    margin: 4px;
 }
-
 .boton{
     display: inline-block;
     padding: 10px 20px;
+    width: 140px;
+    height: 40px;
+    margin: 10px;
 }
 .tabla{
     display:block;
@@ -222,3 +467,12 @@ th, td {
     background-color: gray !important;
 }
 /* Provincias WIP */
+
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}

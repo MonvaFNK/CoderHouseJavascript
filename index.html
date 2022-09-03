@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Geografia en la Argentina</title>
 </head>
+
 <body>
     <header>
         <!-- Form para datos de usuario -->
@@ -35,65 +37,225 @@
             <p id="bienvenido">Bienvenido</p>
             <p>Aqui podran ver datos acerca de las provincias de la Argentina!</p>
         </section>
-    </header>   
+    </header>
     <!-- Seccion de provincias -->
     <main>
         <section class="provincias">
             <h2 class="provincias__titulo"> Provincias Argentinas</h2>
             <div class="provincias__datos">
                 <div class="provincias__datos--imagen">
-                    <div class="buenos_aires provincias_imagen"></div>
-                    <div class="catamarca provincias_imagen"></div>
-                    <div class="chaco provincias_imagen"></div>
-                    <div class="chubut provincias_imagen"></div>
-                    <div class="cordoba provincias_imagen"></div>
-                    <div class="corrientes provincias_imagen"></div>
-                    <div class="entre_rios provincias_imagen"></div>
-                    <div class="formosa provincias_imagen"></div>
-                    <div class="jujuy provincias_imagen"></div>
-                    <div class="la_pampa provincias_imagen"></div>
-                    <div class="la_rioja provincias_imagen"></div>
-                    <div class="mendoza provincias_imagen"></div>
-                    <div class="misiones provincias_imagen"></div>
-                    <div class="neuquen provincias_imagen"></div>
-                    <div class="rio_negro provincias_imagen"></div>
-                    <div class="salta provincias_imagen"></div>
-                    <div class="san_juan provincias_imagen"></div>
-                    <div class="san_luis provincias_imagen"></div>
-                    <div class="santa_cruz provincias_imagen"></div>
-                    <div class="santa_fe provincias_imagen"></div>
-                    <div class="santiago_del_estero provincias_imagen"></div>
-                    <div class="tierra_del_fuego provincias_imagen"></div>
-                    <div class="islas_malvinas provincias_imagen"></div>
-                    <div class="tucuman provincias_imagen"></div>
+                    <img src="/recursos/provincias/Argentina.png" alt="mapa de la Argentina"
+                        class="provincias__datos--imagenargentina">
+                    <div class="buenos_aires absolute">
+                        <div id="BSAS" class="buenos_aires provincias_imagen absolute">
+                            <p>Buenos Aires</p>
+                            <div id="BSASCLIMA"> </div>
+                            <div id="BSASTEMP"> </div>
+                        </div>
+                    </div>
+                    <div class="catamarca absolute">
+                        <div id="CATA" class="catamarca provincias_imagen absolute">
+                            <p>Catamarca</p>
+                            <div id="CATACLIMA"></div>
+                            <div id="CATATEMP"></div>
+                        </div>
+                    </div>
+                    <div class="chaco absolute">
+                        <div id="CHAC" class="chaco provincias_imagen absolute">
+                            <p>Chaco</p>
+                            <div id="CHACCLIMA"></div>
+                            <div id="CHACTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="chubut absolute">
+                        <div id="CHUB" class="chubut provincias_imagen absolute">
+                            <p>Chubut</p>
+                            <div id="CHUBCLIMA"></div>
+                            <div id="CHUBTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="cordoba absolute">
+                        <div id="CORD" class="cordoba provincias_imagen absolute">
+                            <p>Cordoba</p>
+                            <div id="CORDCLIMA"></div>
+                            <div id="CHUBTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="corrientes absolute">
+                        <div id="CORR" class="corrientes provincias_imagen absolute">
+                            <p>Corrientes</p>
+                            <div id="CORRCLIMA"></div>
+                            <div id="CORRTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="entre_rios absolute">
+                        <div id="ENTR" class="entre_rios provincias_imagen absolute">
+                            <p>Entre Rios</p>
+                            <div id="ENTRCLIMA"></div>
+                            <div id="ENTRTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="formosa absolute">
+                        <div id="FORM" class="formosa provincias_imagen absolute">
+                            <p>Formosa</p>
+                            <div id="FORMCLIMA"></div>
+                            <div id="FORMTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="jujuy absolute">
+                        <div id="JUJU" class="jujuy provincias_imagen absolute">
+                            <p>Jujuy</p>
+                            <div id="JUJUCLIMA"></div>
+                            <div id="JUJUTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="la_pampa absolute">
+                        <div id="PAMP" class="la_pampa provincias_imagen absolute">
+                            <div>La Pampa</div>
+                            <div id="PAMPCLIMA"></div>
+                            <div id="PAMPTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="la_rioja absolute">
+                        <div id="RIOJ" class="la_rioja provincias_imagen absolute">
+                            <p>La Rioja</p>
+                            <div id="RIOJCLIMA"></div>
+                            <div id="RIOJTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="mendoza absolute">
+                        <div id="MEND" class="mendoza provincias_imagen absolute">
+                            <p>Mendoza</p>
+                            <div id="MENDCLIMA"></div>
+                            <div id="MENDTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="misiones absolute">
+                        <div id="MISI" class="misiones provincias_imagen absolute">
+                            <p>Misiones</p>
+                            <div id="MISICLIMA"></div>
+                            <div id="MISITEMP"></div>
+                        </div>
+                    </div>
+                    <div class="neuquen absolute">
+                        <div id="NEUQ" class="neuquen provincias_imagen absolute">
+                            <p>Neuquen</p>
+                            <div id="NEUQCLIMA"></div>
+                            <div id="NEUQTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="rio_negro absolute">
+                        <div id="NEGR" class="rio_negro provincias_imagen absolute">
+                            <p>Rio Negro</p>
+                            <div id="NEGRCLIMA"></div>
+                            <div id="NEGRTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="salta absolute">
+                        <div id="SALT" class="salta provincias_imagen absolute">
+                            <p>Salta</p>
+                            <div id="SALTCLIMA"></div>
+                            <div id="SALTTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="san_juan absolute">
+                        <div id="JUAN" class="san_juan provincias_imagen absolute">
+                            <p>San Juan</p>
+                            <div id="JUANCLIMA"></div>
+                            <div id="JUANTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="san_luis absolute">
+                        <div id="LUIS" class="san_luis provincias_imagen absolute">
+                            <p>San Luis</p>
+                            <div id="LUISCLIMA"></div>
+                            <div id="LUISTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="santa_cruz absolute">
+                        <div id="CRUZ" class="santa_cruz provincias_imagen absolute">
+                            <p>Santa Cruz</p>
+                            <div id="CRUZCLIMA"></div>
+                            <div id="CRUZTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="santa_fe absolute">
+                        <div id="FE" class="santa_fe provincias_imagen absolute">
+                            <p>Santa Fe</p>
+                            <div id="FECLIMA"></div>
+                            <div id="FETEMP"></div>
+                        </div>
+                    </div>
+                    <div class="santiago_del_estero absolute">
+                        <div id="ESTE" class="santiago_del_estero provincias_imagen absolute">
+                            <p>Santiago del Estero</p>
+                            <div id="ESTECLIMA"></div>
+                            <div id="ESTETEMP"></div>
+                        </div>
+                    </div>
+                    <div class="tierra_del_fuego absolute">
+                        <div id="FUEG" class="tierra_del_fuego provincias_imagen absolute">
+                            <p>Tierra del Fuego</p>
+                            <div id="FUEGCLIMA"></div>
+                            <div id="FUEGTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="islas_malvinas absolute">
+                        <div id="MALV" class="islas_malvinas provincias_imagen absolute">
+                            <p>Islas Malvinas</p>
+                            <div id="MALVCLIMA"></div>
+                            <div id="MALVTEMP"></div>
+                        </div>
+                    </div>
+                    <div class="tucuman absolute">
+                        <div id="TUCU" class="tucuman provincias_imagen absolute">
+                            <p>Tucuman</p>
+                            <div id="TUCUCLIMA"></div>
+                            <div id="TUCUTEMP"></div>
+                        </div>
+                    </div>
                 </div>
-                <p class="provincias__datos--parrafo1" id="cordoba"> La Argentina cuenta con 23 provincias y un distrito federal, el cual es Buenos Aires, la capital.</p>
-                <p class="provincias__datos--parrafo2"> Lorem, ipsum dolor. </p>
-                <p class="provincias__datos--parrafo3"> Lorem, ipsum dolor. </p>
-                <p class="provincias__datos--parrafo4"> Lorem, ipsum dolor. </p>
+                <p class="provincias__datos--parrafo1" id="cordoba"> La Argentina cuenta con 23 provincias y un distrito
+                    federal, el cual es Buenos Aires, la capital.
+                    A continuancion podra ver datos acerca de la republica Argentina en relacion a su demografia y topografia.</p>
+                <p class="provincias__datos--parrafo2"> El primer Censo de la República Argentina se realizó entre el 15
+                    y el 17 de septiembre de 1869, durante la presidencia de Domingo Faustino Sarmiento tras una
+                    iniciativa de ley impulsada durante el gobierno de Bartolomé Mitre. En aquella oportunidad, el
+                    resultado fue de 1.737.214 habitantes sin contar el ejército que se encontraba en operaciones en
+                    Paraguay tras la Guerra, tampoco se agregó a la población indígena ni la Patagonia.</p>
+                <p class="provincias__datos--parrafo3"> Con una altitud de 6960,8 metros sobre el nivel del mar, el
+                    Aconcagua es el pico más alto de los hemisferios meridional y occidental, el más alto de la Tierra
+                    después del sistema de los Himalayas (Asia) y, por tanto, el pico más elevado en América.
+
+                    Ubicado en la provincia de Mendoza, forma parte de la Cordillera de los Andes. A su alrededor se
+                    encuentra un Parque Nacional con el mismo nombre que sirve de base para aquellos que se animen a
+                    llegar a la cima. </p>
+                <p class="provincias__datos--parrafo4"> Argentina se sitúa en el octavo puesto de los países más grandes
+                    del mundo con 2.766.890 km² de superficie. Aunque se trata de una gran extensión, se encuentra muy
+                    por debajo del tamaño de Brasil, que es el país más grande de América del Sur.
+                    La distancia desde Ushuaia (ciudad argentina ubicada en su extremo sur) a La Quiaca (pueblo
+                    argentino ubicado en su extremo noroeste, en el límite con Bolivia) es de nada más y nada menos que
+                    de 3.643 km de distancia. </p>
+                <div id="contenedor" class="provincias__datos--listado">
+                    <button type="button" id="verListado" class="boton">Ver Listado</button>
+                    <div id="tablalistado" class="tabla"></div>
+                </div>
+            </div>
+            <div>
+                <div id="provincias" class="grafico"></div>
             </div>
             <!-- Listado de provincias e informacion -->
-            <div id="contenedor">
-                <button type="button" id="verListado" class="boton">Ver Listado</button>
-                <div id="tablalistado" class="tabla">
-                </div>
-            </div>
-            <div id="provincias" class="grafico"></div>
 
-            </div>
         </section>
     </main>
-<footer>
-    <div>
-        <div id="clima">    </div>
-        <div id="clima2">   </div>
-    </div>
-    <p>gracias por visitar la pagina</p>
-</footer>
+    <footer>
+        <p>santiago.diaz.monvale@gmail.com</p>
+    </footer>
     <!-- script y librerias -->
     <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
