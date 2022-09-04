@@ -346,6 +346,20 @@ addEventListener('load', async()=>{
     FORMTEMP.innerText = `${temp}°C`
 });
 
+const MALV = `https://api.weatherbit.io/v2.0/current?key=e1a7c144f0134736baf2b9463d30767a&city=$santaushuaia&country=AR&lang=ES`;
+
+addEventListener('load', async()=>{
+    const respuesta = await fetch(MALV);
+    const jsonRta = await respuesta.json()
+    const {weather, temp} = jsonRta.data[0]
+    
+    let MALVCLIMA = document.getElementById("MALVCLIMA")
+    let MALVTEMP = document.getElementById("MALVTEMP") 
+
+    MALVCLIMA.innerText = weather.description,
+    MALVTEMP.innerText = `${temp}°C`
+});
+
 const JUJU = `https://api.weatherbit.io/v2.0/current?key=864ce7c8abb8454d83bd966bf3489aaf&city=$jujuy&country=AR&lang=ES`;
 
 addEventListener('load', async()=>{

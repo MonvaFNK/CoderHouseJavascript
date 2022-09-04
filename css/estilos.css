@@ -69,6 +69,9 @@ body {
     border: solid rgb(85, 113, 204) 2px;
     overflow: hidden;
 }
+.provincia__imagen--texto::selection{
+    background-color: rgba(0, 0, 0, 0);
+}
 .provincias_imagen:hover{
     height: 10px;
     width: 10px;
@@ -88,7 +91,9 @@ body {
     border-radius: 5px;
     z-index: 1;
     color: black;
+    cursor: pointer;
 }
+
 .catamarca {
 top: 15%;
 left: 25%;
